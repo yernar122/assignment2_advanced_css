@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: #222;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    list-style: none;
+}
+
+.nav-links a,
+.portfolio-nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.hero {
+    text-align: center;
+    padding: 55px 20px;
+    background: #e3e8ee;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.section {
+    max-width: 1100px;
+    margin: 45px auto;
+    padding: 0 20px;
+}
+
+.section h2 {
+    margin-bottom: 20px;
+}
+
+/* Task 1 */
+.card-container {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    transition: 0.25s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.card-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.image-one { background: #e66a3c; }
+.image-two { background: #3978c5; }
+.image-three { background: #4c9a6a; }
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 20px;
+}
+
+.card-body p {
+    flex: 1;
+    margin: 10px 0 18px;
+}
+
+button {
+    border: 0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+    cursor: pointer;
+}
+
+/* TAsk 2 */
+.grid-layout {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    grid-template-rows: auto 260px auto;
+    grid-template-areas:
+        "header header"
+        "sidebar main"
+        "footer footer";
+    gap: 10px;
+}
+
+.grid-header {
+    grid-area: header;
+    background: #303f52;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-sidebar {
+    grid-area: sidebar;
+    background: #dce4ec;
+    padding: 20px;
+}
+
+.grid-main {
+    grid-area: main;
+    background: white;
+    padding: 20px;
+}
+
+.grid-footer {
+    grid-area: footer;
+    background: #303f52;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Task 3 */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: 180px;
+    gap: 15px;
+}
+
+.gallery-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery-item span {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    padding: 12px;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.65);
+
+    transform: translateY(100%);
+    transition: 0.25s;
+}
+
+.gallery-item:hover span {
+    transform: translateY(0);
+}
+
+/* Task 4 */
+.portfolio {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:
+        "pheader pheader"
+        "projects info"
+        "pfooter pfooter";
+    gap: 15px;
+    background: white;
+    padding: 15px;
+}
+
+.portfolio-header {
+    grid-area: pheader;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #222;
+    color: white;
+    padding: 18px;
+}
+
+.portfolio-nav {
+    display: flex;
+    gap: 18px;
+}
+
+.projects {
+    grid-area: projects;
+    padding: 15px;
+}
+
+.project-list {
+    display: grid;
+    gap: 15px;
+    margin-top: 12px;
+}
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 18px;
+    border: 1px solid #ddd;
+    border-radius: 7px;
+}
+
+.portfolio-sidebar {
+    grid-area: info;
+    background: #edf0f3;
+    padding: 20px;
+}
+
+.portfolio-sidebar h3 {
+    margin-bottom: 8px;
+}
+
+.portfolio-sidebar p {
+    margin-bottom: 20px;
+}
+
+.portfolio-footer {
+    grid-area: pfooter;
+    text-align: center;
+    padding: 15px;
+    background: #222;
+    color: white;
+}

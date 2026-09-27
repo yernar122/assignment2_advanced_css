@@ -1,0 +1,7 @@
+Add these screenshots after opening index.html:
+task0-navbar.png
+task1-cards.png
+task2-grid.png
+task3-gallery.png
+task3-hover.png
+task4-portfolio.png

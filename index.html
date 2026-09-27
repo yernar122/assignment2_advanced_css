@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2 - Advanced CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Task 0 -->
+    <header class="navbar">
+        <div class="logo">Yernar</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#cards">Cards</a></li>
+                <li><a href="#grid-layout">Grid</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Advanced CSS Assignment</h1>
+        <p>Practice with Flexbox and CSS Grid</p>
+    </section>
+
+    <!-- Task 1 -->
+    <section id="cards" class="section">
+        <h2>My hobbies</h2>
+        <div class="card-container">
+            <article class="card">
+                <img class="card-image" style="object-position: 50% 90%" src="images/chess.jpg" alt="chess">
+                <div class="card-body">
+                    <h3>CHESS</h3>
+                    <p>A strategy game that requires logical thinking and planning.</p>
+                    <button>Read More</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img class="card-image" style="object-position: 50% 70%" src="images/ping-pong.jpg" alt="ping_pong">
+                <div class="card-body">
+                    <h3>TABLE TENNIS</h3>
+                    <p>A fast-paced sport that requires speed and quick reactions.</p>
+                    <button>Read More</button>
+                </div>
+            </article>
+
+            <article class="card">
+                <img class="card-image" src="images/controller.jpg" alt="controller">
+                <div class="card-body">
+                    <h3>VIDEO GAMES</h3>
+                    <p>Interactive games for entertainment, competition, and relaxation.</p>
+                    <button>Read More</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Task  2-->
+    <section id="grid-layout" class="section">
+        <h2>Student Dashboard</h2>
+        <div class="grid-layout">
+            <div class="grid-header"> Student Dashboard </div>
+            <aside class="grid-sidebar">
+                <h3>Navigation</h3>
+                <p>Home</p>
+                <p>Courses</p>
+                <p>Assignments</p>
+                <p>Schedule</p>
+            </aside>
+            <main class="grid-main">
+                <h3>Welcome</h3>
+                <p>
+                    Welcome to my student dashboard.
+                    Here you can find information about courses,
+                    assignments and schedule.
+                </p>
+            </main>
+
+            <div class="grid-footer"> 2026 Student Dashboard </div>
+        </div>
+    </section>
+
+    <!-- Task 3 -->
+    <section id="gallery" class="section">
+        <h2>My favorite videogames</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/witcher_3.webp" alt="witcher 3">
+                <span>Witcher 3</span>
+            </div>
+            <div class="gallery-item">
+                <img src="images/detroit.jpeg" alt="detroit">
+                <span>Detroit: become human</span>
+            </div>
+            <div class="gallery-item">
+                <img src="images/mafia.jpg" alt="mafia 2">
+                <span>Mafia 2</span>
+            </div>
+            <div class="gallery-item">
+                <img src="images/minecraft.jpeg" alt="minecraft">
+                <span>Minecraft</span>
+            </div>
+            <div class="gallery-item">
+                <img src="images/disco.jpg" alt="disco elysium">
+                <span>Disco elysium</span>
+            </div>
+            <div class="gallery-item">
+                <img src="images/red.jpg" alt="rdr2">
+                <span>Red dead redemption 2</span>
+            </div>
+            <div class="gallery-item">
+                <img src="images/assassin.jpg" alt="assasin_2">
+                <span>Assasin 2</span>
+            </div>
+            <div class="gallery-item">
+                <img src="images/dark_souls.jpg" alt="dark_souls">
+                <span>Dark souls 2</span>
+            </div>
+            <div class="gallery-item">
+                <img src="images/resident_evil.jpg" alt="resident_evil">
+                <span>Resident evil 4</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Task 4-->
+    <section id="portfolio" class="section">
+        <h2>Portfolio Page</h2>
+        <div class="portfolio">
+            <header class="portfolio-header">
+                <strong>My Portfolio</strong>
+                <div class="portfolio-nav">
+                    <a href="#">Home</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Contact</a>
+                </div>
+            </header>
+
+            <main class="projects">
+                <h3>My Projects</h3>
+                <div class="project-list">
+                    <article class="project-card">
+                        <h4>Project One</h4>
+                        <p>A simple website made with HTML and CSS.</p>
+                        <button>View Project</button>
+                    </article>
+                    <article class="project-card">
+                        <h4>Project Two</h4>
+                        <p>A responsive layout created with Flexbox.</p>
+                        <button>View Project</button>
+                    </article>
+                    <article class="project-card">
+                        <h4>Project Three</h4>
+                        <p>A gallery layout created with CSS Grid.</p>
+                        <button>View Project</button>
+                    </article>
+                </div>
+            </main>
+
+            <aside class="portfolio-sidebar">
+                <h3>About Me</h3>
+                <p>My name is Yernar Kuanyshbek. I am learning frontend development and modern CSS layouts.</p>
+                <h3>Skills</h3>
+                <p>HTML<br>CSS<br>Flexbox<br>Grid</p>
+            </aside>
+
+            <footer class="portfolio-footer">
+                <p>2026 Yernar Kuanyshbek</p>
+            </footer>
+        </div>
+    </section>
+
+
+
+</body>
+</html>
